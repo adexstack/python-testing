@@ -1,0 +1,12 @@
+*** Settings ***
+Documentation   Example Robot tests for
+...             Bank application
+
+Resource       ../resources/resource.txt
+
+*** Test Cases ***
+Print A Number
+    Log    printed number
+
+Printing From Robot Python
+    Print Testing

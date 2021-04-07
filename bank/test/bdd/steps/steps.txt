@@ -1,0 +1,12 @@
+*** Settings ***
+Documentation    Step definitions
+
+*** Variables ***
+${HOME URL}    ''
+
+*** Keyword ***
+I create the account ${account_number} with balance  ${balance}
+    Create Account    ${account_number}    ${balance}
+
+I create a printing text
+    Print Testing

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20210404 16:54:46.149" schemaversion="2" generator="Robot 4.0 (Python 3.5.2 on linux)" rpa="false">
+<suite id="s1" source="/home/vagrant/PycharmProjects/pythonTesting/robotdir/tests/bank.txt" name="Bank">
+<test id="s1-t1" name="Print A Number">
+<kw library="BuiltIn" name="Log">
+<arg>printed number</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210404 16:54:46.237" level="INFO">printed number</msg>
+<status starttime="20210404 16:54:46.237" endtime="20210404 16:54:46.238" status="PASS"/>
+</kw>
+<status starttime="20210404 16:54:46.235" endtime="20210404 16:54:46.238" status="PASS"/>
+</test>
+<test id="s1-t2" name="Printing From Robot Python">
+<kw library="robotLibrary" name="Print Testing">
+<msg timestamp="20210404 16:54:46.242" level="INFO">I am testing printing</msg>
+<status starttime="20210404 16:54:46.242" endtime="20210404 16:54:46.242" status="PASS"/>
+</kw>
+<status starttime="20210404 16:54:46.240" endtime="20210404 16:54:46.243" status="PASS"/>
+</test>
+<doc>Example Robot tests for
+Bank application</doc>
+<status starttime="20210404 16:54:46.151" endtime="20210404 16:54:46.246" status="PASS"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" name="Bank" id="s1" skip="0">Bank</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

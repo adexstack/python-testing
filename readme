@@ -1,0 +1,38 @@
+(venv35) vagrant@ubuntupython:~/PycharmProjects/pythonTesting$ py.test -v app/calculate_test.py
+(venv35) vagrant@ubuntupython:~/PycharmProjects/pythonTesting$ py.test -r f app/calculate_test.py
+f(failed) E(error) s(skipped) x(failed) X(passed)
+(venv35) vagrant@ubuntupython:~/PycharmProjects/pythonTesting$ py.test --pdb app/calculate_test.py
+use: u up,d down,n next,w where,b break, list, exit
+
+(venv35) vagrant@ubuntupython:~/PycharmProjects/pythonTesting$ pip install pytest-cov
+(venv35) vagrant@ubuntupython:~/PycharmProjects/pythonTesting$ py.test --cov app/ app/
+
+Chapter 5: Driving Development with Test (TDD)
+Ping-Pong Programming: advantage over pair programming is that it takes away over-dominance of the more experienced developer:
+  One developer writes the failing Test and the other code it to pass. Hence learning from each other while also delivering.
+unittest.Testcase, pytest, nosetest, --cov,
+
+Chapter 6: Acceptance Test
+Note: Flask & Lettuce was not working well to pass the BDD test; hence used behave with requests
+Guess this was because the book was based on python2.7 (I use python3.5) compatibility issue
+Only made 2 steps passed, the book made 4 steps passed using Flask and index.html template
+
+Tables of Data in Scenarios
+
+Tagging: https://readthedocs.org/projects/behave/downloads/pdf/latest/
+(venv35) root@ubuntupython:~/PycharmProjects/pythonTesting# behave bank/test/bdd --tags=mytag     (including tagged)
+(venv35) root@ubuntupython:~/PycharmProjects/pythonTesting# behave bank/test/bdd --tags=-mytag    (excluding tagged)
+(venv35) root@ubuntupython:~/PycharmProjects/pythonTesting# behave bank/test/bdd --junit
+
+10 Automating Your Process :
+----------------------------
+Executing Paver Tasks; in pavement.py
+(venv35) vagrant@ubuntupython:~/PycharmProjects/pythonTesting$ paver unit_tests
+
+Jenkins:
+------------------------
+https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04
+http://10.23.45.11:8080/
+admin admin, Shay Testing, shaytesting1@gmail.com
+
+

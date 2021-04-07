@@ -1,0 +1,78 @@
+<testsuite errors="1" failures="0" hostname="ubuntupython" name="features.bank_balance.Bank web application to retrieve and update customer accounts balance" skipped="0" tests="5" time="1.41534" timestamp="2021-04-03T21:58:34.182197"><testcase classname="features.bank_balance.Bank web application to retrieve and update customer accounts balance" name="Retrieve customer balance -- @1.1 " status="passed" time="0.210574"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Retrieve customer balance -- @1.1 
+    Given I create account 1111 with balance of 50 ... passed in 0.003s
+    And I visit the homepage ... passed in 0.205s
+    When I enter the account number 1111 ... passed in 0.001s
+    Then I see a balance of 50 ... passed in 0.002s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.bank_balance.Bank web application to retrieve and update customer accounts balance" name="Retrieve customer balance -- @1.2 " status="passed" time="0.306112"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Retrieve customer balance -- @1.2 
+    Given I create account 2222 with balance of 100 ... passed in 0.001s
+    And I visit the homepage ... passed in 0.299s
+    When I enter the account number 2222 ... passed in 0.004s
+    Then I see a balance of 100 ... passed in 0.002s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.bank_balance.Bank web application to retrieve and update customer accounts balance" name="Retrieve customer balance -- @1.3 " status="passed" time="0.463078"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Retrieve customer balance -- @1.3 
+    Given I create account 3333 with balance of 500 ... passed in 0.000s
+    And I visit the homepage ... passed in 0.453s
+    When I enter the account number 3333 ... passed in 0.007s
+    Then I see a balance of 500 ... passed in 0.003s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.bank_balance.Bank web application to retrieve and update customer accounts balance" name="Retrieve customer balance -- @1.4 " status="passed" time="0.431732"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Retrieve customer balance -- @1.4 
+    Given I create account 4444 with balance of 1000 ... passed in 0.003s
+    And I visit the homepage ... passed in 0.428s
+    When I enter the account number 4444 ... passed in 0.000s
+    Then I see a balance of 1000 ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.bank_balance.Bank web application to retrieve and update customer accounts balance" name="some scenario" status="failed" time="0.003844"><error message="local variable 'a' referenced before assignment" type="UnboundLocalError">
+<![CDATA[
+Failing step: Given I create the following account ... failed in 0.004s
+  | account_number | balance |
+  | 5555           | 55      |
+Location: bank/test/bdd/features/bank_balance.feature:21
+Traceback (most recent call last):
+  File "/home/vagrant/Environments/venv35/lib/python3.5/site-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/home/vagrant/Environments/venv35/lib/python3.5/site-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "bank/test/bdd/steps/steps.py", line 36, in step_impl
+    a = a(row['account_number'], row['balance'])
+UnboundLocalError: local variable 'a' referenced before assignment
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: some scenario
+    Given I create the following account ... failed in 0.004s
+      | account_number | balance |
+      | 5555           | 55      |
+    And I visit the homepage ... skipped in 0.000s
+    When I enter the account number "5555" ... skipped in 0.000s
+    Then I see a balance of "55" ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
