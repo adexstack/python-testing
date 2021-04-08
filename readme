@@ -42,6 +42,6 @@ https://devops4solutions.medium.com/setup-ssh-between-jenkins-and-github-6ec7c79
 configure keygen in linux, on git(id_rsa.pub), jenkins credential plugin (choosing ssh)
 
 Dealing with Github “ssh: Could not resolve hostname github.com:
-Name or service not know, fatal: Could not read from remote repository Error”
+Name or services not know, fatal: Could not read from remote repository Error”
 
 
