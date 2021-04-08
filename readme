@@ -1,3 +1,6 @@
+https://mothergeo-py.readthedocs.io/en/latest/development/how-to/venv.html
+Checkout Corey Schafer youtube:  https://www.youtube.com/watch?v=N5vscPTWKOk
+
 (venv35) vagrant@ubuntupython:~/PycharmProjects/pythonTesting$ py.test -v app/calculate_test.py
 (venv35) vagrant@ubuntupython:~/PycharmProjects/pythonTesting$ py.test -r f app/calculate_test.py
 f(failed) E(error) s(skipped) x(failed) X(passed)
@@ -34,5 +37,11 @@ Jenkins:
 https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04
 http://10.23.45.11:8080/
 admin admin, Shay Testing, shaytesting1@gmail.com
+
+https://devops4solutions.medium.com/setup-ssh-between-jenkins-and-github-6ec7c7933244
+configure keygen in linux, on git(id_rsa.pub), jenkins credential plugin (choosing ssh)
+
+Dealing with Github “ssh: Could not resolve hostname github.com:
+Name or service not know, fatal: Could not read from remote repository Error”
 
 
