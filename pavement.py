@@ -20,7 +20,8 @@ def run_pylint():
         pass
 
 
-@needs('unit_tests', 'py_tests', 'run_pylint')
+#@needs('unit_tests', 'py_tests', 'run_pylint')
+@needs('unit_tests')
 @task
 def default():
     pass
