@@ -1,5 +1,6 @@
 https://mothergeo-py.readthedocs.io/en/latest/development/how-to/venv.html
 Checkout Corey Schafer youtube:  https://www.youtube.com/watch?v=N5vscPTWKOk
+https://dev.to/meetsohail/change-the-python3-default-version-in-ubuntu-1ekb (Needed to do this for jenkins to use python3)
 
 (venv35) vagrant@ubuntupython:~/PycharmProjects/pythonTesting$ py.test -v app/calculate_test.py
 (venv35) vagrant@ubuntupython:~/PycharmProjects/pythonTesting$ py.test -r f app/calculate_test.py
