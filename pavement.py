@@ -4,7 +4,7 @@ from paver.easy import sh, needs
 
 @task
 def unit_tests():
-    sh('pytest --cov=bank/bank bank/test/unit')
+    sh('python -m pytest --cov=bank/bank bank/test/unit')
 
 
 @task
