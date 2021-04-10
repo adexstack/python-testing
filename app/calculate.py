@@ -2,13 +2,13 @@ class Calculate(object):
     def add(self, x, y):
         """
         Takes two integers and adds them together to produce the result.
-        >>> c.add(1, 1)
+        >>> cal.add(1, 1)
         3
 
-        >>> c.add(25, 125)
+        >>> cal.add(25, 125)
         150
 
-        >>> c.add(1.0, 1.0)
+        >>> cal.add(1.0, 1.0)
         Traceback (most recent call last):
          ...
         TypeError: Invalid type: <type 'float'> and <type 'float'>
@@ -21,7 +21,7 @@ class Calculate(object):
 
 if __name__ == '__main__':
     import doctest
-    doctest.testmod(extraglobs={'c': Calculate()})
+    doctest.testmod(extraglobs={'cal': Calculate()})
     # calc = Calculate()
     # result = calc.add(2, 'Dan')
     # print(result)

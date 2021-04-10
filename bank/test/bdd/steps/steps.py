@@ -30,11 +30,12 @@ def step_impl(context, account_number):
 def step_impl(context, balance):
     assert balance == balance
 
+
 @given(u'I create the following account')
 def step_impl(context):
     for row in context.table:
-        a = (row['account_number'], row['balance'])
-        return a
+        account = (row['account_number'], row['balance'])
+        return account
 
 
 @given(u'a set of specific users')
@@ -42,7 +43,3 @@ def step_impl(context):
     model = getattr(context, "model", None)
     for row in context.table:
         context.model.add_user(row["name"], department=row["department"])
-
-
-
-

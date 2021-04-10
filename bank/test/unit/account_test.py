@@ -3,6 +3,9 @@ from bank.bank.account import Account
 
 
 class TestAccount(unittest.TestCase):
+    '''
+    test account
+    '''
     def test_account_object_can_be_created(self):
         account = Account("050", 27)
 

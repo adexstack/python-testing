@@ -36,6 +36,7 @@ Executing Paver Tasks; in pavement.py
 Jenkins:
 ------------------------
 https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04
+https://www.youtube.com/watch?v=iotloCXtIzY   (jenkins job shell commands)
 http://10.23.45.11:8080/
 admin admin, Shay Testing, shaytesting1@gmail.com
 
@@ -44,5 +45,7 @@ configure keygen in linux, on git(id_rsa.pub), jenkins credential plugin (choosi
 
 Dealing with Github “ssh: Could not resolve hostname github.com:
 Name or services not know, fatal: Could not read from remote repository Error”
+
+https://pytest-cov.readthedocs.io/en/latest/reporting.html
 
 
