@@ -24,6 +24,7 @@ Only made 2 steps passed, the book made 4 steps passed using Flask and index.htm
 Tables of Data in Scenarios
 
 Tagging: https://readthedocs.org/projects/behave/downloads/pdf/latest/
+(venv35) root@ubuntupython:~/PycharmProjects/pythonTesting# behave bank/test/bdd    (running all)
 (venv35) root@ubuntupython:~/PycharmProjects/pythonTesting# behave bank/test/bdd --tags=mytag     (including tagged)
 (venv35) root@ubuntupython:~/PycharmProjects/pythonTesting# behave bank/test/bdd --tags=-mytag    (excluding tagged)
 (venv35) root@ubuntupython:~/PycharmProjects/pythonTesting# behave bank/test/bdd --junit
@@ -47,5 +48,36 @@ Dealing with Github “ssh: Could not resolve hostname github.com:
 Name or services not know, fatal: Could not read from remote repository Error”
 
 https://pytest-cov.readthedocs.io/en/latest/reporting.html
+
+Deploying app to the cloud using heroku cloud
+-----------------------------------------------
+
+Downloaded heroku to use the cli:   curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+heroku --version
+heroku login -i
+
+https://dashboard.heroku.com/apps/python-apptesting/deploy/heroku-git
+$ cd my-project/
+$ git init
+$ heroku git:remote -a python-apptesting
+--------------------------------------------------------------------------------
+(venv35) vagrant@ubuntupython:~/PycharmProjects$ heroku login -i
+ ›   Warning: heroku update available from 7.52.0 to 7.56.1.
+heroku: Enter your login credentials
+Email [saadedokun121@gmail.com]:
+Password: ********* (Bidemi22@)
+Logged in as saadedokun121@gmail.com
+(venv35) vagrant@ubuntupython:~/PycharmProjects$ cd python-app-testing/
+(venv35) vagrant@ubuntupython:~/PycharmProjects/python-app-testing$ git push heroku master
+Everything up-to-date
+(venv35) vagrant@ubuntupython:~/PycharmProjects/python-app-testing$
+
+View deployed app here: https://python-apptesting.herokuapp.com/
+---------------------------------------------------------------------------------------------------------
+
+# https://stackoverflow.com/questions/30554702/cant-connect-to-flask-web-service-connection-refused
+# To see the Flask web app displayed on browser; had to include app.run(host='0.0.0.0'), also enabled port 5000
+# vagrant@ubuntupython:~$ sudo ufw allow 5000
+# and accessed browser with http://10.23.45.11:5000
 
 

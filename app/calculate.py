@@ -3,7 +3,7 @@ class Calculate(object):
         """
         Takes two integers and adds them together to produce the result.
         >>> cal.add(1, 1)
-        3
+        2
 
         >>> cal.add(25, 125)
         150
