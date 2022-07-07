@@ -1,0 +1,26 @@
+unit testing
+----------------
+Page 27> : Useful methods in Unit Testing (see appunittest for smart usage and structure)
+tests in /home/vagrant/PycharmProjects/pythonTesting/example/useful_test.py
+
+Chapter 3
+-----------
+Pytest (Newer version of Nose Test)
+pip install pytest, pytest-cov
+viewing test with verbose and summary - py.test -v
+(venv35) vagrant@ubuntupython:~/PycharmProjects/pythonTesting/appunittest/test/unit/calculate$ pytest
+Seeing specific results using -r <flag> from f(failed), E(error), s(skipped), x(failed), X(passed)
+py.test -r f
+pytest --pdb using u or up,l or list, n or next,w or where,d or down,b or break
+pytest --cov /appunittest /test (check Page 45) for coverage check
+
+Mocking
+--------
+When code interacts with other sytems e.g database, web service that are assumed to be tested and fully fuctional.
+This may be down, unavailable and cause false positives result; hence need for mocking and patching. Also expensive
+pip install mock
+Mocking with Patching: /home/vagrant/PycharmProjects/pythonTesting/mocking/test_account.py
+
+Chapter 4 Writing testable Documentation
+-----------------------------------------
+Add docstring

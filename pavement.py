@@ -30,7 +30,6 @@ def sdist():
 
 # I am adding python -m for code execution in Jenkins (External server).
 # Not needed in running directly here on linux venv35
-
 #--cov=bank/bank
 @task
 def unit_tests():
